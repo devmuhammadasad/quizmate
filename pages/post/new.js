@@ -38,7 +38,7 @@ export default function NewPost(props) {
       {!!generating && (
         <div className="text-green-500 flex h-full animate-pulse w-full flex-col justify-center items-center">
           <FontAwesomeIcon icon={faBrain} className="text-8xl" />
-          <h6>Generating...</h6>
+          <h6>Generando...</h6>
         </div>
       )}
       {!generating && (
@@ -49,7 +49,7 @@ export default function NewPost(props) {
           >
             <div>
               <label>
-                <strong>Generate a blog post on the topic of:</strong>
+                <strong>Genera preguntas de examen para una materia de:</strong>
               </label>
               <textarea
                 className="resize-none border border-slate-500 w-full block my-2 px-4 py-2 rounded-sm"
@@ -60,7 +60,7 @@ export default function NewPost(props) {
             </div>
             <div>
               <label>
-                <strong>Targeting the following keywords:</strong>
+                <strong>Que cubra los siguientes temas:</strong>
               </label>
               <textarea
                 className="resize-none border border-slate-500 w-full block my-2 px-4 py-2 rounded-sm"
@@ -69,7 +69,7 @@ export default function NewPost(props) {
                 maxLength={80}
               />
               <small className="block mb-2">
-                Separate keywords with a comma
+                Separe las palabras clave con una coma.
               </small>
             </div>
             <button
@@ -77,7 +77,7 @@ export default function NewPost(props) {
               className="btn"
               disabled={!topic.trim() || !keywords.trim()}
             >
-              Generate
+              Generar
             </button>
           </form>
         </div>

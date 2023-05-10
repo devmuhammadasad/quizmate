@@ -35,11 +35,11 @@ export const AppLayout = ({
         <div className="bg-slate-800 px-2">
           <Logo />
           <Link href="/post/new" className="btn">
-            New post
+            Nuevo quiz
           </Link>
           <Link href="/token-topup" className="block mt-2 text-center">
             <FontAwesomeIcon icon={faCoins} className="text-yellow-500" />
-            <span className="pl-1">{availableTokens} tokens available</span>
+            <span className="pl-1">{availableTokens} tokens disponibles</span>
           </Link>
         </div>
         <div className="px-4 flex-1 overflow-auto bg-gradient-to-b from-slate-800 to-cyan-800">
@@ -61,7 +61,7 @@ export const AppLayout = ({
               }}
               className="hover:underline text-sm text-slate-400 text-center cursor-pointer mt-4"
             >
-              Load more posts
+              Cargar más entradas
             </div>
           )}
         </div>
@@ -80,12 +80,12 @@ export const AppLayout = ({
               <div className="flex-1">
                 <div className="font-bold">{user.email}</div>
                 <Link className="text-sm" href="/api/auth/logout">
-                  Logout
+                  Cerrar sesión
                 </Link>
               </div>
             </>
           ) : (
-            <Link href="/api/auth/login">Login</Link>
+            <Link href="/api/auth/login">Iniciar sesión</Link>
           )}
         </div>
       </div>

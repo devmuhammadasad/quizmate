@@ -12,7 +12,7 @@ export default function Home() {
         <p>
           Genera preguntas de examen de alta calidad en minutos con nuestra plataforma impulsada por la inteligencia artificial, que utiliza ChatGPT para generar preguntas en una variedad de temas y niveles de dificultad. ¡Regístrate ahora para mejorar la eficiencia y la calidad de tus exámenes!
         </p>
-        <Link href="/post/new" className="btn text-left">
+        <Link href="/post/new" className="btn text-center">
           Empezar
         </Link>
       </div>
