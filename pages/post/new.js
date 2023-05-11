@@ -69,7 +69,7 @@ export default function NewPost(props) {
                 maxLength={80}
               />
               <small className="block mb-2">
-                Separe las palabras clave con una coma.
+                Nota: separe los temas clave con una coma (Ejm. independencia de los países latinoamericanos, gobiernos autoritarios, movimiento de derechos civiles y globalización)
               </small>
             </div>
             <button
